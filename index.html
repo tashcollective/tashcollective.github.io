@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TASH collective — تَش کالکتیو | Concept store in Tehran</title>
+<meta name="description" content="TASH collective (تش کالکتیو) is a concept store on Larestan Street, Tehran: art, books, ceramics, candles, bags and handmade things. Open every day, 10:00–22:00.">
+<link rel="canonical" href="https://tashcollective.github.io/">
+<meta name="theme-color" content="#ECE8E4">
+<meta name="color-scheme" content="light">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TASH collective">
+<meta property="og:title" content="TASH collective — تَش کالکتیو">
+<meta property="og:description" content="A concept store in Tehran. Larestan St., No. 15. Open every day, 10:00–22:00.">
+<meta property="og:url" content="https://tashcollective.github.io/">
+<meta property="og:image" content="https://tashcollective.github.io/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/markazi-text-arabic-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "@id": "https://tashcollective.github.io/#store",
+  "name": "TASH collective",
+  "alternateName": ["تش کالکتیو", "تَش"],
+  "description": "Concept store and gift shop in Tehran: paintings and prints, art books, ceramics, candles, bags, jewelry and handmade objects.",
+  "url": "https://tashcollective.github.io/",
+  "logo": "https://tashcollective.github.io/assets/logo.png",
+  "image": [
+    "https://tashcollective.github.io/assets/storefront-night-2400.jpg",
+    "https://tashcollective.github.io/assets/interior-day-960.jpg"
+  ],
+  "telephone": "+989198598323",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No. 15, Larestan St., at Abdoh & Sarbedaran, off Motahari St.",
+    "addressLocality": "Tehran",
+    "addressRegion": "Tehran Province",
+    "addressCountry": "IR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.7202953,
+    "longitude": 51.4107374
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=35.7202953%2C51.4107374",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "10:00",
+    "closes": "22:00"
+  }],
+  "sameAs": ["https://www.instagram.com/tashcollective_/"]
+}
+</script>
+
+<style>
+@font-face {
+  font-family: "Jost";
+  src: url("assets/fonts/jost-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Markazi Text";
+  src: url("assets/fonts/markazi-text-arabic-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+200C-200E, U+FB50-FDFF, U+FE70-FEFC;
+}
+@font-face {
+  font-family: "Markazi Text";
+  src: url("assets/fonts/markazi-text-arabic-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+200C-200E, U+FB50-FDFF, U+FE70-FEFC;
+}
+
+:root {
+  --paper: #ECE8E4;
+  --paper-2: #E2DDD7;
+  --ink: #000;
+  --ink-soft: #4A4542;
+  --wine: #721E2F;
+  --wine-deep: #561522;
+  --rule: rgba(0, 0, 0, .16);
+
+  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --fa: "Markazi Text", "Vazirmatn", Tahoma, serif;
+
+  --gutter: clamp(1rem, 5vw, 4rem);
+  --track: .32em;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
+
+[lang="fa"] {
+  font-family: var(--fa);
+  font-size: 1.28em;
+  line-height: 1.75;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Tracked capitals: the house voice from their Instagram tiles */
+.caps {
+  text-transform: uppercase;
+  letter-spacing: var(--track);
+  font-weight: 350;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 100svh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 4rem var(--gutter) 3rem;
+}
+.hero__mark {
+  width: clamp(120px, 22vw, 190px);
+  margin-bottom: 2.25rem;
+}
+.wordmark { margin: 0; font-weight: inherit; line-height: 1; }
+.wordmark__en {
+  display: block;
+  font-size: clamp(2.6rem, 7vw, 4.25rem);
+  font-weight: 500;
+  letter-spacing: .3em;
+  padding-inline-start: .3em; /* keeps tracked text optically centred */
+}
+.wordmark__sub {
+  display: block;
+  margin-top: .9rem;
+  font-size: clamp(.95rem, 2.2vw, 1.2rem);
+  font-weight: 350;
+  letter-spacing: .62em;
+  padding-inline-start: .62em;
+}
+.wordmark__fa {
+  display: block;
+  margin-top: 1.1rem;
+  font-family: var(--fa);
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  font-weight: 500;
+  color: var(--wine);
+  line-height: 1.4;
+}
+.hero__about {
+  margin: 2.75rem 0 0;
+  max-width: 40ch;
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
+.hero__about [lang="fa"] { display: block; margin-top: .35rem; }
+.hero__link {
+  margin-top: 1.5rem;
+  font-size: .95rem;
+  text-underline-offset: .3em;
+  text-decoration-thickness: 1px;
+}
+.hero__link:hover { color: var(--wine); }
+
+/* ---------- Creed ---------- */
+.creed {
+  background: var(--wine);
+  color: var(--paper);
+  text-align: center;
+  padding: clamp(4.5rem, 12vw, 8.5rem) var(--gutter);
+}
+.creed p {
+  margin: 0 auto;
+  font-size: clamp(1.15rem, 3.4vw, 2.1rem);
+  line-height: 1.85;
+  padding-inline-start: var(--track);
+}
+.creed__fa {
+  display: block;
+  margin-top: 2rem;
+  opacity: .82;
+}
+.diamond {
+  display: block;
+  width: .55rem;
+  height: .55rem;
+  margin: 2.75rem auto 0;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+/* ---------- Night photo ---------- */
+.night { margin: 0; background: #000; }
+.night img {
+  width: 100%;
+  max-height: 92vh;
+  object-fit: cover;
+  object-position: 42% 55%;
+}
+
+/* ---------- Inside ---------- */
+.inside {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: clamp(4.5rem, 11vw, 8rem) var(--gutter);
+}
+.inside__photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
+.inside h2 {
+  margin: 0 0 1.75rem;
+  text-wrap: balance;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.7;
+  color: var(--wine);
+}
+.inside h2 [lang="fa"] { display: block; font-size: 1.35em; font-weight: 500; }
+.inside p { margin: 0; max-width: 40ch; }
+.inside p + p { margin-top: 1.25rem; }
+.inside p[lang="fa"] { max-width: 34ch; }
+
+/* ---------- Visit ---------- */
+.visit {
+  border-top: 1px solid var(--rule);
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: clamp(4rem, 10vw, 7rem) var(--gutter) clamp(4rem, 9vw, 6rem);
+}
+.visit h2 {
+  margin: 0 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.visit h2 [lang="fa"] { font-size: 1.15em; font-weight: 500; }
+
+.facts { margin: 0; }
+.fact {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--rule);
+}
+.fact:last-child { border-bottom: 1px solid var(--rule); }
+.fact dt { color: var(--ink-soft); font-size: .95rem; padding-top: .15rem; }
+.fact dd { margin: 0; }
+.fact dd[lang="fa"] { text-align: right; line-height: 1.6; }
+.fact a { text-decoration: none; }
+.fact a:hover { color: var(--wine); text-decoration: underline; text-underline-offset: .25em; }
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem 2rem;
+  margin-top: 2.75rem;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .95rem 1.6rem;
+  background: var(--wine);
+  color: var(--paper);
+  text-decoration: none;
+  font-weight: 450;
+  letter-spacing: .04em;
+  border-radius: 2px;
+  transition: background-color .2s;
+}
+.button:hover { background: var(--wine-deep); }
+.button [lang="fa"] { font-size: 1.15em; line-height: 1; }
+.textlink {
+  text-underline-offset: .3em;
+  text-decoration-thickness: 1px;
+}
+.textlink:hover { color: var(--wine); }
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: clamp(4rem, 10vw, 7rem) var(--gutter) 2.5rem;
+  background: var(--paper-2);
+}
+.footer__flame { width: 1.6rem; margin: 0 auto 1.75rem; }
+.footer__line {
+  margin: 0;
+  font-size: clamp(1rem, 2.6vw, 1.45rem);
+  padding-inline-start: var(--track);
+  color: var(--wine);
+}
+.footer__small {
+  margin: 3.5rem 0 0;
+  font-size: .85rem;
+  color: var(--ink-soft);
+}
+.footer__small [lang="fa"] { font-size: 1.2em; }
+
+/* ---------- One orchestrated moment: the hero lights up ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .hero__mark { animation: kindle 1.4s cubic-bezier(.2, .7, .2, 1) both; }
+  .wordmark, .hero__about, .hero__link { animation: rise 1s .35s cubic-bezier(.2, .7, .2, 1) both; }
+  .hero__about, .hero__link { animation-delay: .55s; }
+  @keyframes kindle { from { opacity: 0; transform: translateY(10px) scale(.97); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 760px) {
+  .inside { grid-template-columns: 1fr; }
+  .inside__photo { max-width: 26rem; }
+  .visit h2 { margin-bottom: 2rem; }
+  .fact { grid-template-columns: 1fr; gap: .35rem; }
+  .fact dt { padding: 0 0 .2rem; }
+  .button { width: 100%; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="hero__mark" src="assets/logo.png" width="386" height="645"
+       alt="TASH collective logo: two hands holding a lit candle">
+  <h1 class="wordmark">
+    <span class="wordmark__en">TASH</span>
+    <span class="wordmark__sub">collective</span>
+    <span class="wordmark__fa" lang="fa">تَش کالکتیو</span>
+  </h1>
+  <p class="hero__about">
+    A concept store in Tehran, open every day from 10 to 10.
+    <span lang="fa" dir="rtl">کانسپت استوری در تهران؛ هر روز از ۱۰ صبح تا ۱۰ شب.</span>
+  </p>
+  <a class="hero__link" href="#visit">Address and directions</a>
+</header>
+
+<main>
+  <section class="creed" aria-label="What we believe">
+    <p class="caps">We collect<br>things that<br>make us feel.</p>
+    <span class="diamond" aria-hidden="true"></span>
+  </section>
+
+  <figure class="night">
+    <picture>
+      <source type="image/webp" sizes="100vw"
+              srcset="assets/storefront-night-1200.webp 1200w, assets/storefront-night-2400.webp 2400w">
+      <img src="assets/storefront-night-1200.jpg" sizes="100vw"
+           srcset="assets/storefront-night-1200.jpg 1200w, assets/storefront-night-2400.jpg 2400w"
+           width="2400" height="1600" loading="lazy" decoding="async"
+           alt="The TASH collective shop window lit up at night on Larestan Street, with paintings, backpacks, ceramics and a large red plush figure hanging inside">
+    </picture>
+  </figure>
+
+  <section class="inside" aria-labelledby="inside-title">
+    <div class="inside__photo">
+      <picture>
+        <source type="image/webp" srcset="assets/interior-day-960.webp">
+        <img src="assets/interior-day-960.jpg" width="960" height="1280" loading="lazy" decoding="async"
+             alt="Inside the store by day: red floor, steel shelves of books, leather cases, candles and jewelry, framed art on the pillars">
+      </picture>
+    </div>
+    <div>
+      <h2 id="inside-title" class="caps">Made by people, for people.
+        <span lang="fa" dir="rtl">ساختهٔ آدم‌ها، برای آدم‌ها.</span>
+      </h2>
+      <p>Paintings and prints, art books, ceramics, candles, bags, jewelry and small handmade things, all under one roof on Larestan Street.</p>
+      <p lang="fa" dir="rtl">تابلو و پوستر، کتاب هنری، سرامیک، شمع، کیف، زیورآلات و چیزهای کوچک دست‌ساز؛ همه زیر یک سقف در خیابان لارستان.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <h2 id="visit-title"><span>Visit</span> <span lang="fa" dir="rtl">سر بزنید</span></h2>
+
+    <dl class="facts">
+      <div class="fact">
+        <dt>Address</dt>
+        <dd>No. 15, Larestan St.<br>at Abdoh &amp; Sarbedaran<br>off Motahari St., Tehran</dd>
+        <dd lang="fa" dir="rtl">مطهری، خیابان لارستان،<br>تقاطع عبده و سربداران،<br>پلاک ۱۵</dd>
+      </div>
+      <div class="fact">
+        <dt>Hours</dt>
+        <dd>Every day, 10:00–22:00</dd>
+        <dd lang="fa" dir="rtl">هر روز، ۱۰ صبح تا ۱۰ شب</dd>
+      </div>
+      <div class="fact">
+        <dt>Phone</dt>
+        <dd><a href="tel:+989198598323">+98 919 859 8323</a></dd>
+        <dd lang="fa" dir="rtl"><a href="tel:+989198598323" dir="ltr">۰۹۱۹ ۸۵۹ ۸۳۲۳</a></dd>
+      </div>
+      <div class="fact">
+        <dt>Instagram</dt>
+        <dd><a href="https://www.instagram.com/tashcollective_/" rel="noopener">@tashcollective_</a></dd>
+        <dd lang="fa" dir="rtl"><a href="https://www.instagram.com/tashcollective_/" rel="noopener">اینستاگرام تش</a></dd>
+      </div>
+    </dl>
+
+    <div class="actions">
+      <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=35.7202953%2C51.4107374" rel="noopener">
+        Get directions <span lang="fa">مسیریابی</span>
+      </a>
+      <a class="textlink" href="https://balad.ir/location?latitude=35.7202953&amp;longitude=51.4107374&amp;zoom=17" rel="noopener">Open in Balad</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <svg class="footer__flame" viewBox="0 0 64 80" aria-hidden="true">
+    <path d="M32 4C32 4 8 32 8 52a24 24 0 0 0 48 0C56 32 32 4 32 4Z" fill="#721E2F"/>
+    <path d="M32 38c0 0-9 11-9 18.5a9 9 0 0 0 18 0C41 49 32 38 32 38Z" fill="#E2DDD7"/>
+  </svg>
+  <p class="footer__line caps">Keep the flame.</p>
+  <p class="footer__small">© 2026 TASH collective · <span lang="fa">تَش کالکتیو</span></p>
+</footer>
+
+</body>
+</html>
